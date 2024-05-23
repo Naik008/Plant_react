@@ -1,38 +1,161 @@
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background: repeating-linear-gradient(-45deg, #ddece0, #e0e5e2 7px, #f7f9f7 7px, #f7f9f7 14px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#top {
+  text-align: center;
+  margin-top: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#next {
+  border: none;
+  border-radius: 8px;
+  background-color: #167000;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+#next:hover {
+  background-color: #095a0d;
+  transition: 0.5s ease;
+}
+
+h1 {
+  color: #095a0d; /* やさしい緑色 */
+  text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #bcdeb4; /* やさしい緑色 */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #4a7054; /* よりくすんだ緑色 */
+  box-shadow: 0 4px 8px rgba(74, 112, 84, 0.1);
+  border-radius: 10px;
+  border: 6px solid #ddece0; /* やさしい緑色 */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #336740; /* よりくすんだ緑色 */
+  transition: color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+  color: #335e44; /* よりくすんだ緑色 */
+}
+
+.plant-list-container {
+  height: 300px;
+  overflow-y: auto;
+  border: 2px solid #37622b; /* よりくすんだ緑色 */
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ffffff; /* 白色 */
+  box-shadow: 0 4px 8px rgba(74, 112, 84, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.plant-list-container:hover {
+  box-shadow: 0 6px 12px rgba(174, 112, 84, 0.2);
+}
+
+.plant-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #167000; /* よりくすんだ緑色 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f8f4; /* よりくすんだ緑色 */
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.plant-list li:hover {
+  background-color: #c7e3c0; /* やさしい緑色 */
+}
+
+.plant-list li button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a7054; /* 深い緑色 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plant-list li button:hover {
+  background-color: #185418; /* より濃い緑色 */
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #37622b; /* よりくすんだ緑色 */
+  border-radius: 10px;
+  margin-right:10px;
+  margin-left: 180px;
+  width: 67%; /* 修正: 100%から50px引いた幅に変更 */
+  box-sizing: border-box;
+  background-color: #ffffff; /* 白色 */
+}
+
+
+input[type="text"]::placeholder {
+  color: #306c40; /* よりくすんだ緑色 */
+  margin-top: 20px;
+}
+
+#tuika {
+  border: none;
+  border-radius: 8px;
+  background-color: #167000;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 18px;
+  margin-right: 5px; /* 左右のマージンを追加 */
+}
+
+#tuika:hover {
+  background-color: #095a0d;
+  transition: 0.5s ease;
+}
+
+#back {
+  border: none;
+  border-radius: 8px;
+  background-color: #167000;
+  font-size: 14px;
+  color: #fff;
+  padding: 9px 18px;
+  margin-top: 10px;
+  margin-left: 570px;
+  width: fit-content; /* 文字列の幅に合わせる */
+}
+
+
+
+#back:hover {
+  background-color: #095a0d;
+  transition: 0.5s ease;
 }
